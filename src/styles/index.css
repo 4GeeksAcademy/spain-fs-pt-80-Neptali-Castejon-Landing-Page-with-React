@@ -10,3 +10,20 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.jumbotron {
+    background-color: #f8f9fa; 
+    padding: 2rem 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
