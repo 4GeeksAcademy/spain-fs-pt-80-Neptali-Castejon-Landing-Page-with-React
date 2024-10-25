@@ -1,14 +1,17 @@
 import React from "react";
 import { Navbar } from "./navbar";
 import { CardComponent } from "./card";
-import { cardData, jumbotronData, footerData } from "../data";
+import { cardData, jumbotronData, footerData, navbarData } from "../data";
 import { JumboComponent } from "./jumbotron";
 import { Footer } from "./footer";
 
 const Home = () => {
     return (
         <>
-            <Navbar/>
+            <Navbar
+                brandName={navbarData.brandName}
+                links={navbarData.links}
+            />
             <JumboComponent 
                 title={jumbotronData.title}
                 leadText={jumbotronData.leadText}
