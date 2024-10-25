@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "./navbar";
 import { CardComponent } from "./card";
-import { cardData, jumbotronData } from "../data";
+import { cardData, jumbotronData, footerData } from "../data";
 import { JumboComponent } from "./jumbotron";
 import { Footer } from "./footer";
 
@@ -23,7 +23,14 @@ const Home = () => {
                     ))}
                 </div>
             </div>
-            <Footer/>
+            <Footer
+                brandName={footerData.brandName}
+                links={footerData.links}
+                currentYear={footerData.currentYear}
+                companyName={footerData.companyName}
+                companyLink={footerData.companyLink}
+                reservedMessage={footerData.reservedMessage}
+            />
         </>
     );
 };
