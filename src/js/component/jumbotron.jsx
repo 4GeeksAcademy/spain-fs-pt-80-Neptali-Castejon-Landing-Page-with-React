@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { jumbotronData } from '../data';
 
 export const JumboComponent = ({
-        title = jumbotronData.title,
-        leadText = jumbotronData.leadText,
-        additionalText = jumbotronData.additionalText,
-        buttonText = jumbotronData.buttonText,
-        buttonLink = jumbotronData.buttonLink,
+        title,
+        leadText,
+        additionalText,
+        buttonText,
+        buttonLink,
     }) => {
     return (
         <div className="jumbotron">

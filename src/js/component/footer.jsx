@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { footerData } from "../data";
 
 export const Footer = ({
-    brandName = footerData.brandName,
-    links = footerData.links,
-    currentYear = footerData.currentYear,
-    companyName = footerData.companyName,
-    companyLink = footerData.companyLink,
-    reservedMessage = footerData.reservedMessage,
+    brandName,
+    links,
+    currentYear,
+    companyName,
+    companyLink,
+    reservedMessage,
 }) => {
     return (
         <footer className="bg-dark text-light py-4">

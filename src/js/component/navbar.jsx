@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { navbarData } from "../data";
 
 export const Navbar = ({
-    brandName = navbarData.brandName,
-    links = navbarData.links,
+    brandName,
+    links,
   }) => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
